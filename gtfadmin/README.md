@@ -1,4 +1,0 @@
-growingthefaith
-===============
-
-Growing The Faith
