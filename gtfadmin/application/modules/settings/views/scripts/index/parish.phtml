@@ -1,0 +1,203 @@
+<section class="app-page-header">
+	<div class="row-fluid">
+		<div class="span9">
+			<h2>Parish Details</h2>
+		</div>
+	</div>
+</section>
+<div class="app-body-content">
+
+	<section class="detail-section">
+		<div class="row-fluid">
+			<h4 class="subhead">Basic Information</h4>
+			<form class="form-horizontal validate-me agile" method="post" action="">
+				
+					<div class="form-group span10">
+						<div class="span3">
+							<label class="horizontal-form-label">Street Address</label>
+						</div>
+						<div class="span9">
+							<input type="text" value="<?= isset($this->parish->addressLine1) ? $this->parish->addressLine1 : '' ?>" placeholder="Enter The Parish Address" class="horizontal-input" name="addressLine1">
+						</div>
+					</div>
+
+				
+					<div class="form-group span10">
+						<div class="span3">
+							<label class="horizontal-form-label">City</label>
+						</div>
+						<div class="span9">
+							<input type="text" value="<?= isset($this->parish->addressCity) ? $this->parish->addressCity : '' ?>" placeholder="Enter The Parish City" class="horizontal-input" name="addressCity">
+						</div>
+					</div>
+
+				
+					<div class="form-group span10">
+						<div class="span3">
+							<label class="horizontal-form-label">State</label>
+						</div>
+						<div class="span9">
+							<input type="text" value="<?= isset($this->parish->addressState) ? $this->parish->addressState : '' ?>" placeholder="IL" class="horizontal-input" name="addressState">
+						</div>
+					</div>
+
+				
+					<div class="form-group span10">
+						<div class="span3">
+							<label class="horizontal-form-label">Zip Code</label>
+						</div>
+						<div class="span9">
+							<input type="text" value="<?= isset($this->parish->addressZip) ? $this->parish->addressZip : '' ?>" placeholder="123456" class="horizontal-input" name="addressZip">
+						</div>
+					</div>
+
+				
+					<div class="form-group span10">
+						<div class="span3">
+							<label class="horizontal-form-label">Phone No.</label>
+						</div>
+						<div class="span9">
+							<input type="text" value="<?= isset($this->parish->phone) ? $this->parish->phone : '' ?>"  placeholder="Enter The Praish's Phone Number" data-validation="PhoneNumberValid" data-validation-optional="true" class="horizontal-input" name="phone">
+						</div>
+					</div>
+
+				
+					<div class="form-group span10">
+						<div class="span3">
+							<label class="horizontal-form-label">Fax No.</label>
+						</div>
+						<div class="span9">
+							<input type="text" value="<?= isset($this->parish->fax) ? $this->parish->fax : '' ?>" placeholder="Enter The Parish Fax Number" data-validation="number" data-validation-optional="true" class="horizontal-input" name="fax">
+						</div>
+					</div>
+
+				
+				<div class="form-group span10">
+					<div class="span3">
+						<label>Parish Photo</label>
+					</div>
+					<div class="span9">
+						<input type="file" name="ParishImage" id="parish_image">
+						<!--display this only if image is uploaded-->
+						<div class="parish-image-container">
+							<img class="parish-image" src="<?= isset($this->parish->ParishImage->url) ? $this->parish->ParishImage->url : $this->getImage('profile-default.png') ?>">
+						</div>
+					</div>
+				</div>
+				<div class="form-group span12">
+					<div class="span1 pull-right">
+						<input type="submit" value="Save" name="saveParish" class="button button-green pull-right">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section class="detail-section no-border-bottom">
+		<div class="row-fluid">
+			<h4 class="subhead">Contact Information</h4>
+			<form class="form-horizontal validate-me agile" method="post" action="">
+				<h5 class="form-header">Priest's Information</h5>
+				
+				<div class="form-group span10">
+					<div class="span3">
+						<label class="horizontal-form-label">Full Name</label>
+					</div>
+					<div class="span9">
+						<input type="text" value="<?= isset($this->personnel['PriestFullName']) ? $this->personnel['PriestFullName'] : '' ?>" data-validation="FullNameValid" placeholder="Enter Individual's Name" class="horizontal-input" name="PriestFullName">
+					</div>
+				</div>
+        
+				<div class="form-group span10">
+					<div class="span3">
+						<label class="horizontal-form-label">Phone No.</label>
+					</div>
+					<div class="span9">
+						<input type="text" value="<?= isset($this->personnel['PriestPhone']) ? $this->personnel['PriestPhone'] : '' ?>" data-validation="PhoneNumberValid" data-validation-optional="true" placeholder="Enter The Individual's Phone Number" class="horizontal-input" name="PriestPhone">
+					</div>
+				</div>
+        
+				<div class="form-group span10">
+					<div class="span3">
+						<label class="horizontal-form-label">Email Address</label>
+					</div>
+					<div class="span9">
+						<input type="text" value="<?= isset($this->personnel['PriestEmail']) ? $this->personnel['PriestEmail'] : '' ?>" data-validation="email" data-validation-optional="true" placeholder="Enter Individual's Email Address" class="horizontal-input" name="PriestEmail">
+					</div>
+				</div>
+        
+				<div class="clearfix"></div>
+				<h5 class="form-header">Primary Contact's Information</h5>
+				
+				<div class="form-group span10">
+					<div class="span3">
+						<label class="horizontal-form-label">Full Name</label>
+					</div>
+					<div class="span9">
+						<input type="text" value="<?= isset($this->personnel['ParishContactFullName']) ? $this->personnel['ParishContactFullName'] : '' ?>" data-validation="FullNameValid" placeholder="Enter Individual's Name" class="horizontal-input" name="ParishContactFullName">
+					</div>
+				</div>
+        
+				<div class="form-group span10">
+					<div class="span3">
+						<label class="horizontal-form-label">Phone No.</label>
+					</div>
+					<div class="span9">
+						<input type="text" value="<?= isset($this->personnel['ParishContactPhone']) ? $this->personnel['ParishContactPhone'] : '' ?>" data-validation="PhoneNumberValid" data-validation-optional="true" placeholder="Enter The Individual's Phone Number" class="horizontal-input" name="ParishContactPhone">
+					</div>
+				</div>
+        
+				<div class="form-group span10">
+					<div class="span3">
+						<label class="horizontal-form-label">Email Address</label>
+					</div>
+					<div class="span9">
+						<input type="text" value="<?= isset($this->personnel['ParishContactEmail']) ? $this->personnel['ParishContactEmail'] : '' ?>" data-validation="email" data-validation-optional="true" placeholder="Enter Individual's Email Address" class="horizontal-input" name="ParishContactEmail">
+					</div>
+				</div>
+        
+				<div class="form-group span12">
+					<div class="span1 pull-right">
+						<input type="submit" value="Save" name="saveContact" class="button button-green pull-right">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+</div>
+<!--app-body-content-->
+<script>
+
+	$.formUtils.addValidator({
+		name : 'FullNameValid',
+		validatorFunction : function(value, $el, config, language, $form) {
+			//var usernameRegex = '/^([a-zA-Z&]+)$/';
+			return value.match(/^([a-zA-Z-\s]+)$/);
+		},
+		errorMessage : 'The answer you gave must contain only characters and -',
+		errorMessageKey: 'badEvenNumber'
+	}); 
+
+	$.formUtils.addValidator({
+		name : 'LastNameValid',
+		validatorFunction : function(value, $el, config, language, $form) {
+			return value.match(/^([a-zA-Z-\s]+)$/);
+		},
+		errorMessage : 'The answer you gave must contain only characters and -',
+		errorMessageKey: 'badEvenNumber'
+	});
+
+	$.formUtils.addValidator({
+		name : 'PhoneNumberValid',
+		validatorFunction : function(value, $el, config, language, $form) {
+			return value.match(/^([0-9-()\s]+)$/);
+		},
+		errorMessage : 'The answer you gave must contain only numbers and - or ( )',
+		errorMessageKey: 'badEvenNumber'
+	}); 
+
+	$.validate({
+	  form : '.validate-me'
+	});
+
+</script>

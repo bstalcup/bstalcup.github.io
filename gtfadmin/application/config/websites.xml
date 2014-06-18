@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<websites>
+	<website default="default">
+		<environments>
+			<live>
+				<config value="config/live.ini" />
+				<router_config value="config/_router.ini" />
+				<hosts>
+					<default value="" />
+					<alias value="" />
+				</hosts>
+			</live>
+			<dev>
+				<config value="config/dev.ini" />
+				<router_config value="config/_router.ini" />
+				<hosts>
+					<default value="oneparish.lateral-inc.com" />
+				</hosts>
+			</dev>
+			<vm>
+				<config value="config/vm.ini" />
+				<router_config value="config/_router.ini" />
+ 				<hosts>
+					<default value="vm.gtf.com" />
+				</hosts>
+			</vm>
+			<vm-axi>
+				<config value="config/vm_axi.ini" />
+				<router_config value="config/_router.ini" />
+ 				<hosts>
+					<default value="vm-axi.gtf.com" />
+				</hosts>
+			</vm-axi>
+			<vm-all>
+				<config value="config/vm.ini" />
+				<router_config value="config/_router.ini" />
+ 				<hosts>
+					<default value="192.168.1.199" />
+				</hosts>
+			</vm-all>
+		</environments>
+	</website>
+</websites>

@@ -1,0 +1,41 @@
+<?= $this->doctype("XHTML1_STRICT") ?>
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal contact-modal hide fade in" id="supportModal">
+  <div class="modal-header">
+    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+    <h3 class="text-centered " id="myModalLabel">Need Our Help? Send Us A Message</h3>
+  </div>
+  <div class="modal-body">
+    <form id="contact_form" class="form-horizontal">
+    	<div class="form-group">
+		    <label class="modal-label">Full Name</label>
+		    <div class="modal-input">
+		      <input type="text" value=" " autofocus="autofocus" required="" placeholder="Please provide your full name" name="full_name" id="help_fullName">
+		    </div>
+	    </div>
+
+	    <div class="form-group">
+		    <label class="modal-label">Email</label>
+		    <div class="modal-input">
+		      <input type="email" value=" " required="" placeholder="Please provide your email address" name="email" id="help_email">
+		    </div>
+	    </div>
+
+	    <div class="form-group">
+	    	<label class="modal-label">Message</label>
+        <div class="modal-input">
+		    	<textarea required="" class="form-textarea" placeholder="What can we help you with?" name="message" id="help_message"></textarea>
+        </div>
+	    </div>
+      <div class="form-group">
+        <br>
+        <div class="modal-input modal-buttons">
+          <a aria-hidden="true" data-dismiss="modal" class="grey-link right-margin-10">Cancel</a>
+          <button class="button button-green support-submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <small>You can also checkout our support center at <a target="_blank" href="http://www.oneparish.com/support">www.oneparish.com/supprt</a></small>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<?= $this->doctype("XHTML1_STRICT") ?>
+<div id="sidebar" class="sidebar">
+	<ul class="sidebar-nav">
+		<li class="sidebar-list-header"><i class="dripicon-menu"></i>Site Navigation</li>
+
+		<li class="<?= $this->routeOptions['menu'] == 'dashboard' ? 'active' : '' ?>">
+			<a class="<?= $this->routeOptions['submenu'] == 'dashboard' ? 'selected' : '' ?>" href="/"><i class="dripicon-home"></i>Dashboard</a>
+		</li>
+
+		<li class="toggle-menu <?= $this->routeOptions['menu'] == 'directory' ? 'active' : '' ?>">
+			<a class="toggle-menu-anchor" href="#"><i class="dripicon-document"></i>Directory<i class="icon-right"></i></a>
+			<ul class="submenu">
+				<li><a class="<?= $this->routeOptions['submenu'] == 'parish-directory' ? 'selected' : '' ?>" href="/parish-directory" id="default_page">View All Families</a></li>
+				<li><a class="<?= $this->routeOptions['submenu'] == 'approve-families' ? 'selected' : '' ?>" href="/approve-families">Approve New Families <span class="badge badge-primary badge-yellow<?= strlen($this->approvedFamilies) > 3 ? ' badge-long' : '' ?>" id="approvedFamilies"><?= $this->approvedFamilies ?></span></a></li>
+				<li><a class="<?= $this->routeOptions['submenu'] == 'add-family' ? 'selected' : '' ?>" href="/add-family">Add Family</a></li>
+				<!--<li><a href="/upload-directory">Upload New Families</a></li>-->
+				<li><a class="<?= $this->routeOptions['submenu'] == 'edit-directory' ? 'selected' : '' ?>" href="/edit-directory">Fix Duplicates</a></li>
+			</ul>
+		</li>
+
+		<li class="toggle-menu <?= $this->routeOptions['menu'] == 'groups' ? 'active' : '' ?>">
+			<a class="toggle-menu-anchor" href="#"><i class="dripicon-user"></i>Groups<i class="icon-right"></i></a>
+			<ul class="submenu">
+				<li><a class="<?= $this->routeOptions['submenu'] == 'view-groups' ? 'selected' : '' ?>" href="/groups">View All</a></li>
+				<li><a class="<?= $this->routeOptions['submenu'] == 'new-group' ? 'selected' : '' ?>" href="/new-group">Add New</a></li>
+			</ul>
+		</li>
+
+    <li class="<?= $this->routeOptions['menu'] == 'events' ? 'active' : '' ?>">
+    	<a class="<?= $this->routeOptions['submenu'] == 'events' ? 'selected' : '' ?>" href="/events"><i class="dripicon-calendar"></i>Calendar</a>
+    </li>
+
+    <li class="toggle-menu <?= $this->routeOptions['menu'] == 'settings' ? 'active' : '' ?>">
+      <a class="toggle-menu-anchor" href="#"><i class="dripicon-gear"></i>Settings<i class="icon-right"></i></a>
+      <ul class="submenu">
+        <li><a class="<?= $this->routeOptions['submenu'] == 'parish-details' ? 'selected' : '' ?>" href="/parish">Parish Details</a></li>
+        <li><a class="<?= $this->routeOptions['submenu'] == 'school-details' ? 'selected' : '' ?>" href="/school">School Details</a></li>
+       
+      </ul>
+    </li>
+	</ul>
+
+	<div class="sidebar-footer">
+		<a id="contact_form_trigger" href="#supportModal">Need help? Contact Us</a>
+	</div>
+</div>

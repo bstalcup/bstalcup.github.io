@@ -1,0 +1,93 @@
+<? $this->headScript()->prependFile($this->getJs('login.js', 'user')); ?>
+<? $this->headLink()->appendStylesheet($this->getStyle('login.css', 'user'), 'screen') ?>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<div class="flips-wrappers cf">
+
+	<div id="flip-search-parish-form" class="form-bg flip-form active flip-search">
+		
+		<div class="form-header">
+			<h2>Find Your Parish</h2>
+		</div>
+		<!--form-header-->
+		<div class="find-parish-search cf">
+			<form class="sign-up-form find-parish" action="#">
+				<div class="row bottom-margin-50 top-margin-30">
+					<div class="span10">
+						<h3 class="text-centered form-title">Search by city and state or by zip code</h3>
+					</div>
+				</div>
+				<div class="row bottom-margin-30">
+					<div class="span4">
+						<label>Parish's Zip Code</label>
+						<input type="text" placeholder="Search by zip code" class="form-control" name="zipCode" id="zipCode">
+					</div>
+					<div class="span2">
+						<div class="input-divider">
+							<div class="divider-rule"></div>
+							<h5>OR</h5>
+						</div>
+					</div>
+					<div class="span4">
+						<label>City &amp; State</label>
+						<input type="text" placeholder="Search by city and state" class="form-control" name="cityState" id="cityState">
+					</div>
+				</div>
+				<div class="form-button-group top-margin-30">
+					<input id="submit-locate-parish" type="Submit" class="button button-yellow" value="Locate Parish">
+				</div>
+			</form>
+		</div>
+		<!--find-parish-search-->
+		
+		<div class="find-parish-results hide cf">
+			<form class="sign-up-form select-parish" action="#">
+				<div class="row">
+					<h3 class="form-title">Search results</h3>
+					<div class="span10 left-margin-0">
+						<ul class="find-parish-results-list">
+							<div class="loader-container">
+								<div class="loader">
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								</div>
+								<h4 class="text-caps">Loading Parishes</h4>
+							</div>
+							
+							<!--no results result -->
+							
+							<!--<li class="no-results">This is a bit embarassing.<br>We weren't able to find your location.<br> Try searching again.</li>
+							<!--end no result-->
+							
+						</ul>
+					</div>
+				</div>
+				<div class="form-button-group top-margin-30">
+					<a id="back-to-locate-parish" class="grey-link right-margin-20" href="#find_parish">Search Again</a>
+					<input id="submit-parish-results" type="Submit" disabled="true" class="button button-yellow" value="Add My Parish">
+				</div>
+			</form>
+		</div>
+		<!--find-parish-results-->
+
+		
+	</div>
+	<!--flip-search-parish-form-->
+
+</div>
+<!--flips-wrappers-->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in" id="welcomeModal">
+  <div class="modal-header">
+    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+    <h3 class="text-centered">Welcome to One Parish</h3>
+  </div>
+  <div class="modal-body text-centered">
+    <h4>You have <span class="green-text">successfully</span> created an account on One Parish</h4>
+    <p>Now, locate your parish and join in on the fun.</p>
+  </div>
+  <div class="modal-footer text-centered">
+    <button aria-hidden="true" data-dismiss="modal" class="button button-green">Get Started</button>
+  </div>
+</div>
