@@ -5,7 +5,6 @@ h1, h2, h3 {
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	max-width: 500px;
 }
 
 div.header, div.content{
