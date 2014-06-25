@@ -16,13 +16,11 @@ body {
 
 .header h1 {
 	font-size: 48pt;
-	color: #36C186;
 }
 
 .header h2 {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24pt;
-	color: #0B6A42;
 	font-weight: 400;
 }
 
@@ -32,11 +30,6 @@ body {
 	border-radius: 0px;
 }
 
-.orange{
-	color: #1D242C;
-	background: #5FDDA7;
-
-}
 
 .pure-menu li a:hover{
 	background: #999CA4;
@@ -59,11 +52,34 @@ body {
 	border-bottom-color: #ddd;
 }
 
-/*
-#FFCE8A - bright orange
-#FFFDFA - lighter orange
-#F3EBE0 - light grey
-#CBC2B5 - darker grey
-#FFFDFA - white
-#1D242C - black
-*/
+/* As hex codes */
+
+.color-primary-0 { color: #00B8B8 }	/* Main Primary color */
+.color-primary-1 { color: #90C4C4 }
+.color-primary-2 { color: #2CAFAF }
+.color-primary-3 { color: #007F7F }
+.color-primary-4 { color: #005959 }
+
+button.color-primary-0 { background: #00B8B8; color: #FFFFFF; }	/* Main Primary color */
+button.color-primary-1 { background: #90C4C4; color: #FFFFFF; }
+button.color-primary-2 { background: #2CAFAF; color: #FFFFFF; }
+button.color-primary-3 { background: #007F7F; color: #FFFFFF; }
+button.color-primary-4 { background: #005959; color: #FFFFFF; }
+
+.color-secondary-1-0 { color: #0960C2 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #9AB2CC }
+.color-secondary-1-2 { color: #3A76BA }
+.color-secondary-1-3 { color: #04438A }
+.color-secondary-1-4 { color: #012E60 }
+
+button.color-secondary-1-0 { background: #0960C2; color: #FFFFFF; }	/* Main Secondary color (1) */
+button.color-secondary-1-1 { background: #9AB2CC; color: #FFFFFF; }
+button.color-secondary-1-2 { background: #3A76BA; color: #FFFFFF; }
+button.color-secondary-1-3 { background: #04438A; color: #FFFFFF; }
+button.color-secondary-1-4 { background: #012E60; color: #FFFFFF; }
+
+.color-secondary-2-0 { color: #00CC59 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #9DD4B5 }
+.color-secondary-2-2 { color: #32C672 }
+.color-secondary-2-3 { color: #009742 }
+.color-secondary-2-4 { color: #00692E }
