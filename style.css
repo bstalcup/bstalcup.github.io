@@ -20,10 +20,10 @@ body {
 }
 
 .header h2 {
-	font-size: 36pt;
+	font-family: 'Raleway', sans-serif;
+	font-size: 24pt;
 	color: #0B6A42;
 	font-weight: 400;
-	font-style: italic;
 }
 
 .pure-button {
