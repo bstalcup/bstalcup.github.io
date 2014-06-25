@@ -1,15 +1,69 @@
 h1, h2, h3 {
-		font-family: 'Josefin Slab', serif;';
+		font-family: 'Josefin Slab', serif;
+		font-weight: 300;
 }
 
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
+	color: #1D242C;
+	background: #FFFDFA;
 }
 
-div.header, div.content{
-	padding: 0px, 33%;
-	max-width: 500px;
+.header h1,h2 {
+	text-align: center;
+}
+
+.header h1 {
+	font-size: 48pt;
+	color: #36C186;
+}
+
+.header h2 {
+	font-size: 36pt;
+	color: #0B6A42;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.pure-button {
+	font-family: 'Raleway' sans-serif;
+	width:100%;
+	border-radius: 0px;
+}
+
+.orange{
+	color: #1D242C;
+	background: #5FDDA7;
+
+}
+
+.pure-menu li a:hover{
+	background: #999CA4;
+}
+
+.header, .content{
+	max-width: 800px;
 	margin-right:auto;
 	margin-left:auto;
 }
+
+.content {
+	padding-top: 5px;
+
+}
+
+.header {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ddd;
+}
+
+/*
+#FFCE8A - bright orange
+#FFFDFA - lighter orange
+#F3EBE0 - light grey
+#CBC2B5 - darker grey
+#FFFDFA - white
+#1D242C - black
+*/
