@@ -1,7 +1,8 @@
 window.onload = function(){
 	$('#b2').click(function(){
 		$.get('coding.json', function(data){
-			$('#content').empty().html(data.content).addClass('fadeInRight animated');
+			$('#content').empty().removeClass('fadeInRight animated');
+			$('#content').html(data.content).addClass('fadeInRight animated');
 		});
 	})
 	// $('#b2').click(function(){

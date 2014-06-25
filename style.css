@@ -1,6 +1,8 @@
 h1, h2, h3 {
 		font-family: 'Josefin Slab', serif;
 		font-weight: 300;
+
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -83,3 +85,9 @@ button.color-secondary-1-4 { background: #012E60; color: #FFFFFF; }
 .color-secondary-2-2 { color: #32C672 }
 .color-secondary-2-3 { color: #009742 }
 .color-secondary-2-4 { color: #00692E }
+
+button.color-secondary-2-0 { background: #00CC59; color: #FFFFFF; }	/* Main Secondary color (2) */
+button.color-secondary-2-1 { background: #9DD4B5; color: #FFFFFF; }
+button.color-secondary-2-2 { background: #32C672; color: #FFFFFF; }
+button.color-secondary-2-3 { background: #009742; color: #FFFFFF; }
+button.color-secondary-2-4 { background: #00692E; color: #FFFFFF; }
