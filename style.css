@@ -1,12 +1,12 @@
 body {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 400;
 	color: #1D242C;
 	background: #FFFDFA;
 }
 
 h1, h2, h3 {
-		font-family: 'Josefin Slab', serif;
+		font-family: 'Raleway', sans-serif;
 		font-weight: 300;
 		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -21,12 +21,13 @@ p {
 
 .header h1 {
 	font-size: 4em;
+	font-weight: 200;
 }
 
 .header h2 {
 	font-size: 2em;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
+	font-family: 'Raleway', serif;
+	font-weight: 300;
 }
 
 .pure-button {
@@ -101,7 +102,7 @@ button.color-secondary-2-3 { background: #009742; color: #FFFFFF; }
 button.color-secondary-2-4 { background: #00692E; color: #FFFFFF; }
 
 #content {
-	font-family: 'Raleway' sans-serif;
+	font-family: 'Josefin Slab' serif;
 }
 
 /* end */
