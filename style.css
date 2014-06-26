@@ -10,6 +10,11 @@ body {
 	font-weight: 300;
 	color: #1D242C;
 	background: #FFFDFA;
+	max-width:;
+}
+
+p {
+	font-size: 1em;
 }
 
 .header h1,h2 {
@@ -17,12 +22,12 @@ body {
 }
 
 .header h1 {
-	font-size: 48pt;
+	font-size: 4em;
 }
 
 .header h2 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 24pt;
+	font-size: 2em;
 	font-weight: 400;
 }
 
@@ -30,17 +35,16 @@ body {
 	font-family: 'Raleway' sans-serif;
 	width:100%;
 	border-radius: 0px;
-}
-
-
-.pure-menu li a:hover{
-	background: #999CA4;
+	text-transform: capitalize;
+	font-size: .9em;
 }
 
 .header, .content{
 	max-width: 800px;
 	margin-right:auto;
 	margin-left:auto;
+	padding-right:10px;
+	padding-left:10px;
 }
 
 .content {
