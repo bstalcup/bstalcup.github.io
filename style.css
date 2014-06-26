@@ -3,7 +3,6 @@ body {
 	font-weight: 300;
 	color: #1D242C;
 	background: #FFFDFA;
-	max-width:;
 }
 
 h1, h2, h3 {
@@ -101,3 +100,18 @@ button.color-secondary-2-1 { background: #9DD4B5; color: #FFFFFF; }
 button.color-secondary-2-2 { background: #32C672; color: #FFFFFF; }
 button.color-secondary-2-3 { background: #009742; color: #FFFFFF; }
 button.color-secondary-2-4 { background: #00692E; color: #FFFFFF; }
+
+/* end */
+
+/* Small screens (default) */
+html { font-size: 100%; }
+ 
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
