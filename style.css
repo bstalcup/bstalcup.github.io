@@ -22,12 +22,12 @@ p {
 }
 
 .header h1 {
-	font-size: 4em;
+	font-size: 5vw;
 }
 
 .header h2 {
+	font-size: 2vw;
 	font-family: 'Raleway', sans-serif;
-	font-size: 2em;
 	font-weight: 400;
 }
 
