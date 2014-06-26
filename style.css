@@ -100,6 +100,10 @@ button.color-secondary-2-2 { background: #32C672; color: #FFFFFF; }
 button.color-secondary-2-3 { background: #009742; color: #FFFFFF; }
 button.color-secondary-2-4 { background: #00692E; color: #FFFFFF; }
 
+#content {
+	font-family: 'Raleway' sans-serif;
+}
+
 /* end */
 
 /* Small screens (default) */
