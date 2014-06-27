@@ -16,11 +16,23 @@
 	     url('../fonts/Aileron-UltraLight.ttf') format('truetype');
 }
 
+.everything {
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right:1.5em;
+	padding-left:1.5em;
+}
+
 body {
 	font-family: 'Josefin Slab', serif;
 	font-weight: 400;
 	color: #1D242C;
-	background: #FFFDFA;
+	background-image: url('background-basilica.jpg');
+	background-size: cover;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
 }
 
 h1, h2, h3 {
@@ -58,10 +70,8 @@ p {
 }
 
 .header, .content{
+	background: #FAFAFA;
 	width:100%;
-	max-width: 800px;
-	margin-right:auto;
-	margin-left:auto;
 	/*padding-right:10px;
 	padding-left:10px;*/
 }
@@ -71,29 +81,40 @@ p {
 	padding-left:5px;
 }
 
-.content {
-	padding-top: 5px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #000;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-}
-
 .header {
+	margin-top: 3em;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	border-style: solid;
 	border-top-width: 1px;
-	border-top-color: #000;
+	border-top-color: #FFF;
 	border-right-width: 1px;
-	border-right-color: #000;
+	border-right-color: #FFF;
 	border-left-width: 1px;
-	border-left-color: #000;
+	border-left-color: #FFF;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #ddd;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+	z-index: 1;
 }
+
+.content {
+	padding-top: 5px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+	-webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+    -moz-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+    -o-transition:width 300ms ease-in-out, height 300ms ease-in-out;
+    transition:width 300ms ease-in-out, height 300ms ease-in-out;
+}
+
 
 /* As hex codes */
 
