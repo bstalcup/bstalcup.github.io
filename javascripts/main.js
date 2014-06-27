@@ -2,9 +2,9 @@ $(document).ready(function(){
 	$('#b2').on('click', function(){
 		if($('#content h2').text() === 'Coding'){return;}
 		oboe('files/coding.json')
-		.on('done', function(){
+		.on('done', function(parsedjson){
 			$('#content').empty().removeClass('fadeInRight animated');
-			setTimeout(function(){$('#content').html(data.content).addClass('fadeInRight animated')}, 150);
+			setTimeout(function(){$('#content').html(parsedjson.content).addClass('fadeInRight animated')}, 150);
 		});
 	});
 });
