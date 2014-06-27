@@ -83,8 +83,8 @@ p {
 
 .header {
 	margin-top: 3em;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 	border-style: solid;
 	border-top-width: 1px;
 	border-top-color: #FFF;
@@ -106,8 +106,8 @@ p {
 	border-bottom-width: 1px;
 	border-right-width: 1px;
 	border-left-width: 1px;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
 	-webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
     -moz-transition:width 300ms ease-in-out, height 300ms ease-in-out;
