@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('#b2').on('click', function(){
-		if($('#content h2') != undefined && $('#content h2').text() === 'Coding'){return;}
+		if($('#content h2').length != 0 && $('#content h2').text() === 'Coding'){return;}
 		oboe('files/coding.json')
 		.on('done', function(parsedjson){
 			$('#content').empty().removeClass('fadeInRight animated');
