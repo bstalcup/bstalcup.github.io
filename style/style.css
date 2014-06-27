@@ -73,10 +73,23 @@ p {
 
 .content {
 	padding-top: 5px;
-
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 .header {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000;
+	border-right-width: 1px;
+	border-right-color: #000;
+	border-left-width: 1px;
+	border-left-color: #000;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #ddd;
