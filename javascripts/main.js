@@ -4,7 +4,7 @@ $(document).ready(function(){
 		oboe('files/coding.json')
 		.on('done', function(data){
 			$('#content').empty().removeClass('fadeInRight animated');
-			setTimeout(function(){$('#content').html(data.content)});//.addClass('fadeInRight animated')}, 150);
+			setTimeout(function(){$('#content').html(data.content)}, 500);//.addClass('fadeInRight animated')}, 150);
 		});
 	});
 });
