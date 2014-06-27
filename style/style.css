@@ -1,3 +1,21 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Aileron';
+	src: url('../fonts/Aileron-Thin.woff') format('woff'),
+	     url('../fonts/Aileron-Thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Aileron Light';
+	src: url('../fonts/Aileron-UltraLight.woff') format('woff'),
+	     url('../fonts/Aileron-UltraLight.ttf') format('truetype');
+}
+
 body {
 	font-family: 'Josefin Slab', serif;
 	font-weight: 400;
@@ -6,7 +24,7 @@ body {
 }
 
 h1, h2, h3 {
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Aileron', sans-serif;
 		font-weight: 300;
 		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -20,18 +38,19 @@ p {
 }
 
 .header h1 {
+	font-family: 'Aileron Light';
 	font-size: 4em;
 	font-weight: 200;
 }
 
 .header h2 {
 	font-size: 2em;
-	font-family: 'Raleway', serif;
+	font-family: 'Aileron', serif;
 	font-weight: 300;
 }
 
 .pure-button {
-	font-family: 'Raleway' sans-serif;
+	font-family: 'Aileron' sans-serif;
 	width:100%;
 	border-radius: 0px;
 	text-transform: capitalize;
