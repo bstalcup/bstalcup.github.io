@@ -19,7 +19,7 @@ $(document).ready(function(){
 			// var s = data.split('<hr>');
 			// $('#content').empty().removeClass('fadeIn').removeClass('animated');
 			// setTimeout(function(){$('#content').html(s[dd]).addClass('fadeIn').addClass('animated')}, 150);
-		}
+		});
 	});
 });
 
